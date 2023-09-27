@@ -1,10 +1,12 @@
 import React from "react";
 import Navigation from "./navigation";
+import Carousel from "./carousel";
 function Home() {
   return (
-    <div>
+    <>
       <Navigation />
-    </div>
+      <Carousel />
+    </>
   );
 }
 
