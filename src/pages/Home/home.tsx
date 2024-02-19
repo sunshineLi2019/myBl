@@ -1,6 +1,6 @@
 import React from "react";
-import Navigation from "./navigation";
-import Carousel from "./carousel";
+import Navigation from "../../components/Navigation";
+import Carousel from "./Carousel";
 function Home() {
   return (
     <>
