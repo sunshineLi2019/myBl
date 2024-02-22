@@ -3,27 +3,22 @@ import home from "./css/navigation.module.less";
 import { NavLink } from "react-router-dom";
 export default function Navigation(): JSX.Element {
   const [beforeScrollTop, setBeforeScrollTop] = useState(window.scrollY);
-  const [scrollDirection, setScrollDirection] = useState(0); //1up,2down
   useEffect(() => {
-    window.addEventListener("scroll", (): void => {
+    function scrollHandle(): void {
       const afterScrollTop: number = window.scrollY;
-      setBeforeScrollTop(afterScrollTop);
       const nav = document.getElementsByClassName(home.nav);
-      if (scrollDirection === 1 || scrollDirection === 0) {
-        if (afterScrollTop > beforeScrollTop) {
-          console.log(beforeScrollTop);
-
-          (nav[0] as HTMLElement).style.marginTop = "-200px";
-          setScrollDirection(2);
-        }
-      } else if (scrollDirection === 2 || scrollDirection === 0) {
-        if (afterScrollTop < beforeScrollTop) {
-          (nav[0] as HTMLElement).style.marginTop = "20px";
-          setScrollDirection(1);
-        }
+      if (afterScrollTop > beforeScrollTop) {
+        (nav[0] as HTMLElement).style.marginTop = "-200px";
+      } else {
+        (nav[0] as HTMLElement).style.marginTop = "20px";
       }
-    });
-  }, []);
+      setBeforeScrollTop(afterScrollTop);
+    }
+    window.addEventListener("scroll", scrollHandle);
+    return () => {
+      window.removeEventListener("scroll", scrollHandle);
+    };
+  }, [beforeScrollTop]);
 
   return (
     <>

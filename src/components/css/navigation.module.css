@@ -6,6 +6,7 @@
   position: fixed;
   background-color: #ebebeb;
   z-index: 1;
+  transition: margin-top 1.5s;
 }
 .navBox .nav .img {
   background: url("/src/assets/头像.webp") no-repeat center;
