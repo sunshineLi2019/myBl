@@ -1,0 +1,79 @@
+.back {
+  height: 190px;
+  background-image: url("https://img4.nga.178.com/ngabbs/head/20160831_15.jpg");
+  background-size: auto 100%;
+  background-repeat: repeat-x;
+  background-position: 200px 0px;
+  animation: scroll 20s linear infinite;
+}
+.table {
+  padding: 10px 10px 10px 10px;
+}
+.table table {
+  width: 100%;
+  padding: 0;
+  box-sizing: border-box;
+  border-spacing: 1px;
+  border-collapse: separate;
+  border: 1px solid #f5e8cb;
+  box-shadow: 0 0 5px -3px #000;
+}
+.table table tr td {
+  width: 14%;
+  text-align: center;
+  line-height: 1.83em;
+  padding: 6px;
+}
+.table table tr .c1 {
+  padding-left: 1px;
+  padding-right: 1px;
+  width: 5%;
+  white-space: nowrap;
+}
+.table table tr .c2 {
+  width: auto;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+.table table tr .c3,
+.table table tr .c4 {
+  width: 14%;
+  text-align: center;
+  color: #58697b;
+  padding-left: 1px;
+  padding-right: 1px;
+  font-size: 0.923em;
+}
+.table table .row1 .c1 {
+  background-color: #fff6df;
+}
+.table table .row1 .c2 {
+  background-color: #fff8e7;
+}
+.table table .row1 .c3 {
+  background-color: #fff6df;
+}
+.table table .row1 .c4 {
+  background-color: #fff6df;
+}
+.table table .row2 .c1 {
+  background-color: #ffedc3;
+}
+.table table .row2 .c2 {
+  background-color: #ffedc3;
+}
+.table table .row2 .c3 {
+  background-color: #ffedc3;
+}
+.table table .row2 .c4 {
+  background-color: #ffedc3;
+}
+@keyframes scroll {
+  100% {
+    background-position: 0px 0px;
+  }
+  0% {
+    background-position: 2048px 0px;
+  }
+}
+/*# sourceMappingURL=./log.module.css.map */
