@@ -4,7 +4,7 @@
   width: 70%;
   height: 50px;
   position: fixed;
-  background-color: #ebebeb;
+  background-color: #ebebeb52;
   z-index: 1;
   transition: margin-top 1.5s;
 }
@@ -14,13 +14,13 @@
   margin-left: 20px;
   margin-top: -10px;
   float: left;
-  width: 90px;
-  height: 90px;
+  width: 80px;
+  height: 80px;
   box-shadow: -5px 5px 3px rgba(163, 133, 133, 0.336);
 }
 .navBox .nav .img:hover {
-  width: 120px;
-  height: 120px;
+  width: 100px;
+  height: 100px;
   margin-top: -13px;
 }
 .navBox .nav .imgClick {
@@ -57,7 +57,7 @@
   transition: all 0.3s;
 }
 .navBox .nav ul li:hover {
-  background-color: #ffffff;
+  background-color: #ffffffae;
   height: 110%;
   box-shadow: -3px 3px rgba(100, 89, 89, 0.479);
   top: -3px;
@@ -66,5 +66,7 @@
 }
 .navBox .nav ul a {
   text-decoration: none;
+  color: #000;
+  font-weight: bold;
 }
 /*# sourceMappingURL=./navigation.module.css.map */
