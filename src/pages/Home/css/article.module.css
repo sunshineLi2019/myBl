@@ -8,4 +8,68 @@
   transition: all 0.5s ease-in-out;
   margin-top: 90px;
 }
+.box li {
+  position: relative;
+  z-index: 2;
+}
+.box li .care {
+  position: relative;
+  height: 100px;
+  box-sizing: border-box;
+  margin: 20px 25px;
+  background-color: hsla(0, 0%, 100%, 0.7);
+  padding: 12px 0;
+  transform: all 0.3s 0s;
+  z-index: 3;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.box li .care:hover {
+  transform: scale(1.02);
+  background-color: hsla(0, 0%, 100%, 0.83);
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.3);
+}
+.box li .care .target {
+  background-color: rgba(106, 106, 106, 0.6);
+  color: rgba(51, 51, 51, 0.53333333);
+  width: 80px;
+  height: 20px;
+  transform: rotate(45deg);
+  text-align: center;
+  position: absolute;
+  line-height: 20px;
+  font-size: 12px;
+  font-weight: bolder;
+  top: 8px;
+  right: -20px;
+}
+.box li .care .header {
+  padding-left: 15px;
+  display: flex;
+  justify-content: flex-start;
+  font-weight: 100;
+  font-size: 12px;
+  font-family: "Averia Sans Libre", Fantasy;
+  color: #333;
+}
+@font-face {
+  font-family: "iconfont";
+  /* Project id  */
+  src: url("../../../assets/iconfont.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Averia Sans Libre";
+  /* Project id  */
+  src: url("/src/assets/1.ttf");
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 12px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-time:before {
+  content: "\e680";
+}
 /*# sourceMappingURL=./article.module.css.map */
