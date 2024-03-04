@@ -1,4 +1,8 @@
 .box {
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: backwards;
   max-width: 62%;
   background-color: rgba(255, 255, 255, 0.6);
   height: calc(100vh - 90px);
@@ -7,6 +11,10 @@
   overflow-x: hidden;
   transition: all 0.5s ease-in-out;
   margin-top: 90px;
+}
+.box::-webkit-scrollbar {
+  height: 0;
+  width: 0;
 }
 .box li {
   position: relative;
@@ -19,7 +27,7 @@
   margin: 20px 25px;
   background-color: hsla(0, 0%, 100%, 0.7);
   padding: 12px 0;
-  transform: all 0.3s 0s;
+  transition: all 0.5s;
   z-index: 3;
   border-radius: 5px;
   overflow: hidden;
@@ -49,18 +57,99 @@
   justify-content: flex-start;
   font-weight: 100;
   font-size: 12px;
-  font-family: "Averia Sans Libre", Fantasy;
   color: #333;
+  font-family: Fantasy;
 }
-@font-face {
-  font-family: "iconfont";
-  /* Project id  */
-  src: url("../../../assets/iconfont.ttf") format("truetype");
+.box li .care .header .time {
+  margin-right: 20px;
+  color: rgba(3, 3, 3, 0.4);
+}
+.box li .care .header .time .icon-time {
+  margin-right: 5px;
+}
+.box li .care .header .see {
+  margin-right: 12px;
+  color: #5183e6;
+}
+.box li .care .header .see span {
+  margin-right: 5px;
+}
+.box li .care .content {
+  padding-left: 15px;
+  margin-top: 8px;
+  overflow: hidden;
+}
+.box li .care .content .title {
+  font-size: 1.17em;
+  font-weight: bold;
+}
+.box li .care .content .simpleContent {
+  text-align: left;
+  font-size: 14px;
+  margin-top: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #666;
+  font-weight: 300;
+}
+.box .pagenation {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.box .pagenation div {
+  margin: 15px 5px;
+}
+.box .pagenation div select {
+  width: 65px;
+  height: 25px;
+  border: 2px solid #000;
+  padding: 0 15px 0 10px;
+  font-weight: 600;
+  transition: all 0.5s;
+  outline: none;
+}
+.box .pagenation div button {
+  width: 45px;
+  height: 25px;
+  border: 2px solid #000;
+  outline: none;
+  border-radius: 20px;
+  background-color: transparent;
+  font-weight: 600;
+  transition: all 0.5s;
+}
+.box .pagenation div button:hover {
+  transform: scale(1.1);
+  background-color: #fff;
+  color: red;
+}
+.box .pagenation div.black > button {
+  background-color: #000;
+  color: #fff;
+}
+.box .pagenation div.black > button:hover {
+  color: red;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 @font-face {
   font-family: "Averia Sans Libre";
   /* Project id  */
   src: url("/src/assets/1.ttf");
+}
+@font-face {
+  font-family: "iconfont";
+  /* Project id  */
+  src: url("../../../assets/iconfont.ttf") format("truetype");
 }
 .iconfont {
   font-family: "iconfont" !important;
@@ -68,6 +157,21 @@
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+.icon-shoucang:before {
+  content: "\f0114";
+}
+.icon-yanjing:before {
+  content: "\e62f";
+}
+.icon-dianzan_kuai:before {
+  content: "\ec8c";
+}
+.icon-good:before {
+  content: "\e62a";
+}
+.icon-shoucang1:before {
+  content: "\e8c6";
 }
 .icon-time:before {
   content: "\e680";

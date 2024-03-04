@@ -1,4 +1,5 @@
 .box {
+  .fadeIn(1s,ease-in-out);
   max-width: 62%;
   background-color: rgba(255, 255, 255, 0.6);
   height: calc(100vh - 90px);
@@ -7,6 +8,10 @@
   overflow-x: hidden;
   transition: all 0.5s ease-in-out;
   margin-top: 90px;
+  &::-webkit-scrollbar {
+    height: 0;
+    width: 0;
+  }
   li {
     position: relative;
     z-index: 2;
@@ -17,7 +22,7 @@
       margin: 20px 25px;
       background-color: hsla(1, 1%, 100%, 0.7);
       padding: 12px 0;
-      transform: all 0.3s 0s;
+      transition: all 0.5s;
       z-index: 3;
       border-radius: 5px;
       overflow: hidden;
@@ -57,20 +62,109 @@
         justify-content: flex-start;
         font-weight: 100;
         font-size: 12px;
-        font-family: "Averia Sans Libre", Fantasy;
         color: #333;
+        font-family: Fantasy;
+        .time {
+          margin-right: 20px;
+          color: rgba(3, 3, 3, 0.4);
+          .icon-time {
+            margin-right: 5px;
+          }
+        }
+        .see {
+          margin-right: 12px;
+          color: rgb(81, 131, 230);
+          span {
+            margin-right: 5px;
+          }
+        }
+      }
+      .content {
+        padding-left: 15px;
+        margin-top: 8px;
+        overflow: hidden;
+        // height: 90%;
+        .title {
+          font-size: 1.17em;
+          font-weight: bold;
+        }
+        .simpleContent {
+          text-align: left;
+          font-size: 14px;
+          margin-top: 10px;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          color: #666;
+          font-weight: 300;
+        }
       }
     }
   }
+  .pagenation {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+
+    div {
+      margin: 15px 5px;
+      select {
+        width: 65px;
+        height: 25px;
+        border: 2px solid #000;
+        padding: 0 15px 0 10px;
+        font-weight: 600;
+        transition: all 0.5s;
+        outline: none;
+      }
+      button {
+        width: 45px;
+        height: 25px;
+        border: 2px solid #000;
+        outline: none;
+        border-radius: 20px;
+        background-color: transparent;
+        font-weight: 600;
+        transition: all 0.5s;
+        &:hover {
+          transform: scale(1.1);
+          background-color: #fff;
+          color: red;
+        }
+      }
+      &.black > button {
+        background-color: #000;
+        color: #fff;
+        &:hover {
+          color: red;
+        }
+      }
+    }
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.fadeIn(@time:1s,@ease:ease-out,@fillmode:backwards) {
+  animation-name: fadeIn;
+  animation-duration: @time;
+  animation-timing-function: @ease;
+  animation-fill-mode: @fillmode;
+}
+@font-face {
+  font-family: "Averia Sans Libre"; /* Project id  */
+  src: url("/src/assets/1.ttf");
 }
 @font-face {
   font-family: "iconfont"; /* Project id  */
   src: url("../../../assets/iconfont.ttf")
     format("truetype");
-}
-@font-face {
-  font-family: "Averia Sans Libre"; /* Project id  */
-  src: url("/src/assets/1.ttf");
 }
 .iconfont {
   font-family: "iconfont" !important;
@@ -78,6 +172,25 @@
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+.icon-shoucang:before {
+  content: "\f0114";
+}
+
+.icon-yanjing:before {
+  content: "\e62f";
+}
+
+.icon-dianzan_kuai:before {
+  content: "\ec8c";
+}
+
+.icon-good:before {
+  content: "\e62a";
+}
+
+.icon-shoucang1:before {
+  content: "\e8c6";
 }
 
 .icon-time:before {
