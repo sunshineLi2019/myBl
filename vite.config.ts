@@ -29,5 +29,4 @@ export default defineConfig({
       // globalModulePaths: ["./componentB.module.css"], // 代表不想参与到css模块化的路径
     },
   },
-  base: "/myBlog/",
 });

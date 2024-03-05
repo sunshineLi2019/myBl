@@ -3,6 +3,35 @@
   height: 100vh;
   background-image: url("./assets/background.jpg");
   background-size: cover;
-  /* min-width: 50vw; */
-  /* background-position: right; */
+  overflow: hidden;
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 12px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-shoucang:before {
+  content: "\f0114";
+}
+
+.icon-yanjing:before {
+  content: "\e62f";
+}
+
+.icon-dianzan_kuai:before {
+  content: "\ec8c";
+}
+
+.icon-good:before {
+  content: "\e62a";
+}
+
+.icon-shoucang1:before {
+  content: "\e8c6";
+}
+
+.icon-time:before {
+  content: "\e680";
 }

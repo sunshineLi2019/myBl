@@ -1,49 +1,31 @@
 import React from "react";
 import article from "./css/article.module.less";
+import Log from "../log/Log";
 export default function Carousel() {
   return (
-    <div style={{ overflow: "hidden" }}>
-      <ul className={article.box}>
+    <div className={article.box}>
+      <Log />
+      {/* <ul>
         <li>
           <div className={article.care}>
             <div className={article.target}>
               随笔
             </div>
             <div className={article.header}>
-              <span className={article.time}>
-                <span
-                  className={`
-                  ${article.iconfont}
-                  ${article.iconTime}
-                  `}
-                ></span>
+              <span className="time">
+                <span className="iconfont icon-time"></span>
                 <span>2024-01-05 13:30:42</span>
               </span>
-              <span className={article.see}>
-                <span
-                  className={`
-                  ${article.iconfont}
-                  ${article.iconYanjing}
-                  `}
-                ></span>
+              <span className="see">
+                <span className="iconfont icon-yanjing"></span>
                 106
               </span>
-              <span className={article.see}>
-                <span
-                  className={`
-                ${article.iconfont}
-                ${article.iconGood}
-                `}
-                ></span>
+              <span className="see">
+                <span className="iconfont icon-good"></span>
                 123
               </span>
-              <span className={article.see}>
-                <span
-                  className={`
-                ${article.iconfont}
-                ${article.iconShoucang}
-                `}
-                ></span>
+              <span className="see">
+                <span className="iconfont icon-shoucang"></span>
                 123
               </span>
             </div>
@@ -66,40 +48,20 @@ export default function Carousel() {
               随笔
             </div>
             <div className={article.header}>
-              <span className={article.time}>
-                <span
-                  className={`
-                  ${article.iconfont}
-                  ${article.iconTime}
-                  `}
-                ></span>
+              <span className="time">
+                <span className="iconfont icon-time"></span>
                 <span>2024-01-05 13:30:42</span>
               </span>
-              <span className={article.see}>
-                <span
-                  className={`
-                  ${article.iconfont}
-                  ${article.iconYanjing}
-                  `}
-                ></span>
+              <span className="see">
+                <span className="iconfont icon-yanjing"></span>
                 106
               </span>
-              <span className={article.see}>
-                <span
-                  className={`
-                ${article.iconfont}
-                ${article.iconGood}
-                `}
-                ></span>
+              <span className="see">
+                <span className="iconfont icon-good"></span>
                 123
               </span>
-              <span className={article.see}>
-                <span
-                  className={`
-                ${article.iconfont}
-                ${article.iconShoucang}
-                `}
-                ></span>
+              <span className="see">
+                <span className="iconfont icon-shoucang"></span>
                 123
               </span>
             </div>
@@ -122,40 +84,20 @@ export default function Carousel() {
               随笔
             </div>
             <div className={article.header}>
-              <span className={article.time}>
-                <span
-                  className={`
-                  ${article.iconfont}
-                  ${article.iconTime}
-                  `}
-                ></span>
+              <span className="time">
+                <span className="iconfont icon-time"></span>
                 <span>2024-01-05 13:30:42</span>
               </span>
-              <span className={article.see}>
-                <span
-                  className={`
-                  ${article.iconfont}
-                  ${article.iconYanjing}
-                  `}
-                ></span>
+              <span className="see">
+                <span className="iconfont icon-yanjing"></span>
                 106
               </span>
-              <span className={article.see}>
-                <span
-                  className={`
-                ${article.iconfont}
-                ${article.iconGood}
-                `}
-                ></span>
+              <span className="see">
+                <span className="iconfont icon-good"></span>
                 123
               </span>
-              <span className={article.see}>
-                <span
-                  className={`
-                ${article.iconfont}
-                ${article.iconShoucang}
-                `}
-                ></span>
+              <span className="see">
+                <span className="iconfont icon-shoucang"></span>
                 123
               </span>
             </div>
@@ -178,40 +120,20 @@ export default function Carousel() {
               随笔
             </div>
             <div className={article.header}>
-              <span className={article.time}>
-                <span
-                  className={`
-                  ${article.iconfont}
-                  ${article.iconTime}
-                  `}
-                ></span>
+              <span className="time">
+                <span className="iconfont icon-time"></span>
                 <span>2024-01-05 13:30:42</span>
               </span>
-              <span className={article.see}>
-                <span
-                  className={`
-                  ${article.iconfont}
-                  ${article.iconYanjing}
-                  `}
-                ></span>
+              <span className="see">
+                <span className="iconfont icon-yanjing"></span>
                 106
               </span>
-              <span className={article.see}>
-                <span
-                  className={`
-                ${article.iconfont}
-                ${article.iconGood}
-                `}
-                ></span>
+              <span className="see">
+                <span className="iconfont icon-good"></span>
                 123
               </span>
-              <span className={article.see}>
-                <span
-                  className={`
-                ${article.iconfont}
-                ${article.iconShoucang}
-                `}
-                ></span>
+              <span className="see">
+                <span className="iconfont icon-shoucang"></span>
                 123
               </span>
             </div>
@@ -234,40 +156,20 @@ export default function Carousel() {
               随笔
             </div>
             <div className={article.header}>
-              <span className={article.time}>
-                <span
-                  className={`
-                  ${article.iconfont}
-                  ${article.iconTime}
-                  `}
-                ></span>
+              <span className="time">
+                <span className="iconfont icon-time"></span>
                 <span>2024-01-05 13:30:42</span>
               </span>
-              <span className={article.see}>
-                <span
-                  className={`
-                  ${article.iconfont}
-                  ${article.iconYanjing}
-                  `}
-                ></span>
+              <span className="see">
+                <span className="iconfont icon-yanjing"></span>
                 106
               </span>
-              <span className={article.see}>
-                <span
-                  className={`
-                ${article.iconfont}
-                ${article.iconGood}
-                `}
-                ></span>
+              <span className="see">
+                <span className="iconfont icon-good"></span>
                 123
               </span>
-              <span className={article.see}>
-                <span
-                  className={`
-                ${article.iconfont}
-                ${article.iconShoucang}
-                `}
-                ></span>
+              <span className="see">
+                <span className="iconfont icon-shoucang"></span>
                 123
               </span>
             </div>
@@ -290,40 +192,20 @@ export default function Carousel() {
               随笔
             </div>
             <div className={article.header}>
-              <span className={article.time}>
-                <span
-                  className={`
-                  ${article.iconfont}
-                  ${article.iconTime}
-                  `}
-                ></span>
+              <span className="time">
+                <span className="iconfont icon-time"></span>
                 <span>2024-01-05 13:30:42</span>
               </span>
-              <span className={article.see}>
-                <span
-                  className={`
-                  ${article.iconfont}
-                  ${article.iconYanjing}
-                  `}
-                ></span>
+              <span className="see">
+                <span className="iconfont icon-yanjing"></span>
                 106
               </span>
-              <span className={article.see}>
-                <span
-                  className={`
-                ${article.iconfont}
-                ${article.iconGood}
-                `}
-                ></span>
+              <span className="see">
+                <span className="iconfont icon-good"></span>
                 123
               </span>
-              <span className={article.see}>
-                <span
-                  className={`
-                ${article.iconfont}
-                ${article.iconShoucang}
-                `}
-                ></span>
+              <span className="see">
+                <span className="iconfont icon-shoucang"></span>
                 123
               </span>
             </div>
@@ -340,6 +222,43 @@ export default function Carousel() {
             </div>
           </div>
         </li>
+        <li>
+          <div className={article.care}>
+            <div className={article.target}>
+              随笔
+            </div>
+            <div className={article.header}>
+              <span className="time">
+                <span className="iconfont icon-time"></span>
+                <span>2024-01-05 13:30:42</span>
+              </span>
+              <span className="see">
+                <span className="iconfont icon-yanjing"></span>
+                106
+              </span>
+              <span className="see">
+                <span className="iconfont icon-good"></span>
+                123
+              </span>
+              <span className="see">
+                <span className="iconfont icon-shoucang"></span>
+                123
+              </span>
+            </div>
+            <div className={article.content}>
+              <div className={article.title}>
+                2024展望
+              </div>
+              <div
+                className={article.simpleContent}
+              >
+                近况
+                好久没更新博客了，一方面是来到了长沙之后，人确实变得懒...
+              </div>
+            </div>
+          </div>
+        </li>
+
         <div className={article.pagenation}>
           <div className={article.page}>
             <select name="" id="">
@@ -365,7 +284,7 @@ export default function Carousel() {
             <span>&gt;</span>
           </div>
         </div>
-      </ul>
+      </ul> */}
     </div>
   );
 }

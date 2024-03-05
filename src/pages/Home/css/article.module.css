@@ -60,20 +60,6 @@
   color: #333;
   font-family: Fantasy;
 }
-.box li .care .header .time {
-  margin-right: 20px;
-  color: rgba(3, 3, 3, 0.4);
-}
-.box li .care .header .time .icon-time {
-  margin-right: 5px;
-}
-.box li .care .header .see {
-  margin-right: 12px;
-  color: #5183e6;
-}
-.box li .care .header .see span {
-  margin-right: 5px;
-}
 .box li .care .content {
   padding-left: 15px;
   margin-top: 8px;
@@ -132,6 +118,20 @@
 }
 .box .pagenation div.black > button:hover {
   color: red;
+}
+:global(.time) {
+  margin-right: 20px;
+  color: rgba(3, 3, 3, 0.4);
+}
+:global(.time) .icon-time {
+  margin-right: 5px;
+}
+:global(.see) {
+  margin-right: 12px;
+  color: #5183e6;
+}
+:global(.see) span {
+  margin-right: 5px;
 }
 @keyframes fadeIn {
   0% {
