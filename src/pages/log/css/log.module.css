@@ -1,10 +1,35 @@
-.box .header {
+.header {
   text-align: center;
   overflow: hidden;
   margin-top: 35px;
 }
-.box .header .title {
-  font-size: 2em;
+.header .title {
   text-shadow: rgba(255, 255, 255, 0.8) 5px 5px 5px;
+}
+.header p {
+  font-family: "veria Sans Libre", fantasy;
+  margin-top: 10px;
+}
+.header p > span {
+  margin: 0 15px;
+  color: #777;
+}
+.header p > span span:first-child {
+  font-size: 16px;
+  margin: 0 5px;
+}
+.content {
+  line-height: 20px;
+  font-weight: 400;
+  padding: 55px;
+  font-size: 14px;
+  color: #444;
+}
+.content h2 {
+  margin: 16px 0;
+}
+.content p {
+  text-indent: 2em;
+  margin-bottom: 10px;
 }
 /*# sourceMappingURL=./log.module.css.map */

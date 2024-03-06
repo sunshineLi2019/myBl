@@ -11,7 +11,7 @@ const router = createBrowserRouter([
     element: <App />,
     children: [
       { index: true, element: <Carousel /> },
-      { path: "/log", element: <Log /> },
+      { path: "/log/:id", element: <Log /> },
       { path: "/project", element: <Project /> },
       { path: "/game", element: <Game /> },
       { path: "/message", element: <Message /> },

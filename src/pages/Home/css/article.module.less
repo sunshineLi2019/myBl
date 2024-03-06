@@ -1,17 +1,5 @@
 .box {
-  .fadeIn(1s,ease-in-out);
-  max-width: 62%;
-  background-color: rgba(255, 255, 255, 0.6);
-  height: calc(100vh - 90px);
-  margin: 0 auto;
-  overflow: auto;
-  overflow-x: hidden;
-  transition: all 0.5s ease-in-out;
-  margin-top: 90px;
-  &::-webkit-scrollbar {
-    height: 0;
-    width: 0;
-  }
+ 
   li {
     position: relative;
     z-index: 2;
@@ -143,20 +131,7 @@
     margin-right: 5px;
   }
 }
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-.fadeIn(@time:1s,@ease:ease-out,@fillmode:backwards) {
-  animation-name: fadeIn;
-  animation-duration: @time;
-  animation-timing-function: @ease;
-  animation-fill-mode: @fillmode;
-}
+
 @font-face {
   font-family: "Averia Sans Libre"; /* Project id  */
   src: url("/src/assets/1.ttf");

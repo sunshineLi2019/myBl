@@ -1,14 +1,35 @@
-.box {
-  .header {
-    text-align: center;
-    overflow: hidden;
-    .title {
-      font-size: 2em;
-      text-shadow: rgba(255, 255, 255, 0.8) 5px
-        5px 5px;
-    }
-    margin-top: 35px;
+.header {
+  text-align: center;
+  overflow: hidden;
+  margin-top: 35px;
+  .title {
+    text-shadow: rgba(255, 255, 255, 0.8) 5px 5px
+      5px;
   }
-  .content {
+  p {
+    font-family: "veria Sans Libre", fantasy;
+    margin-top: 10px;
+    & > span {
+      margin: 0 15px;
+      color: #777;
+      span:first-child {
+        font-size: 16px;
+        margin: 0 5px;
+      }
+    }
+  }
+}
+.content {
+  line-height: 20px;
+  font-weight: 400;
+  padding: 55px;
+  font-size: 14px;
+  color: #444;
+  h2 {
+    margin: 16px 0;
+  }
+  p {
+    text-indent: 2em;
+    margin-bottom: 10px;
   }
 }

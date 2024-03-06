@@ -1,21 +1,3 @@
-.box {
-  animation-name: fadeIn;
-  animation-duration: 1s;
-  animation-timing-function: ease-in-out;
-  animation-fill-mode: backwards;
-  max-width: 62%;
-  background-color: rgba(255, 255, 255, 0.6);
-  height: calc(100vh - 90px);
-  margin: 0 auto;
-  overflow: auto;
-  overflow-x: hidden;
-  transition: all 0.5s ease-in-out;
-  margin-top: 90px;
-}
-.box::-webkit-scrollbar {
-  height: 0;
-  width: 0;
-}
 .box li {
   position: relative;
   z-index: 2;
@@ -132,14 +114,6 @@
 }
 :global(.see) span {
   margin-right: 5px;
-}
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 @font-face {
   font-family: "Averia Sans Libre";

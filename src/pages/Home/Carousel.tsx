@@ -1,12 +1,16 @@
 import React from "react";
 import article from "./css/article.module.less";
-import Log from "../log/Log";
+import { useNavigate } from "react-router-dom";
 export default function Carousel() {
+  const navigate = useNavigate();
   return (
-    <div className={article.box}>
-      <Log />
-      {/* <ul>
-        <li>
+    <div className={`${article.box} box`}>
+      <ul>
+        <li
+          onClick={() => {
+            navigate("/log/121");
+          }}
+        >
           <div className={article.care}>
             <div className={article.target}>
               随笔
@@ -42,7 +46,11 @@ export default function Carousel() {
             </div>
           </div>
         </li>
-        <li>
+        <li
+          onClick={() => {
+            navigate("/log/122");
+          }}
+        >
           <div className={article.care}>
             <div className={article.target}>
               随笔
@@ -284,7 +292,7 @@ export default function Carousel() {
             <span>&gt;</span>
           </div>
         </div>
-      </ul> */}
+      </ul>
     </div>
   );
 }
