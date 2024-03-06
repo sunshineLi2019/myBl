@@ -1,3 +1,6 @@
+.box ul {
+  animation: scroll 1s ease-in-out backwards;
+}
 .box li {
   position: relative;
   z-index: 2;
@@ -100,6 +103,14 @@
 }
 .box .pagenation div.black > button:hover {
   color: red;
+}
+@keyframes scroll {
+  0% {
+    margin-top: -20px;
+  }
+  100% {
+    margin-top: 0px;
+  }
 }
 :global(.time) {
   margin-right: 20px;
