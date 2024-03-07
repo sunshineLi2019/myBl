@@ -54,7 +54,7 @@ export default function Navigation(): JSX.Element {
             <NavLink to="/">首页</NavLink>
           </li>
           <li>
-            <NavLink to="/log/121">日志</NavLink>
+            <NavLink to="/admin">管理</NavLink>
           </li>
           <li>
             <NavLink to="/project">项目</NavLink>

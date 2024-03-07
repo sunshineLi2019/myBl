@@ -5,6 +5,7 @@ import Log from "../pages/log/Log";
 import Project from "../pages/project/Project";
 import Game from "../pages/game/Game";
 import Message from "../pages/message/Message";
+import Admin from "../pages/admin/Admin";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -15,6 +16,7 @@ const router = createBrowserRouter([
       { path: "/project", element: <Project /> },
       { path: "/game", element: <Game /> },
       { path: "/message", element: <Message /> },
+      { path: "/admin", element: <Admin /> },
     ],
   },
 ]);
